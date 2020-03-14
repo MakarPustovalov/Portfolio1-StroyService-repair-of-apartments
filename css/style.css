@@ -109,10 +109,14 @@
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 9999999;
+  z-index: 9999;
 }
 .header__links{
   display: flex;
+  margin-right: 10.92459%;
+  margin-left: auto;
+}
+.header__links_fixed{
   margin-right: auto;
   margin-left: auto;
 }
