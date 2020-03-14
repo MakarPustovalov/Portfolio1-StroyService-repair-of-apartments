@@ -1,3 +1,19 @@
+
+var mySwiper = new Swiper('.swiper-container', {
+  speed: 400,
+  spaceBetween: 100,
+  loop: true,
+  slidesPerView: 1,
+  navigation: {
+    nextEl: '.arrow',
+  },
+  pagination: {
+    el: '.slider-pagination',
+    bulletClass: 'slider-bullet',
+    bulletActiveClass: 'slider-bullet-active'
+  },
+});
+
 const menu = document.querySelector('.header__menu');
 const links = document.querySelector('.header__links');
 
@@ -12,5 +28,3 @@ window.onscroll = () => {
     links.classList.remove('header__links_fixed');
   }
 };
-
-console.log("menu", menu);
