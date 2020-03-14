@@ -260,17 +260,23 @@
 .swiper-slide{
   display: flex;
   width: 100%;
+  justify-content: space-between;
 }
 .swiper-right-column{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 23.9495798%;
+  width: 30.9119%;
   margin-top: 100px;
   height: 561px;
 }
 .swiper-slide__img-container{
-  width: 67.226890756%;
+  max-width: 800px;
+  width: 61.8238%;
+}
+.swiper-slide__img{
+  width: 100%;
+  object-fit: cover;
 }
 .swiper-slide__upper{
   text-transform: uppercase;
