@@ -17,7 +17,7 @@
 }
 .container{
   max-width: 1336px;
-  width: 69.583333%;
+  /* width: 69.583333%; */
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -295,6 +295,9 @@
   text-transform: uppercase;
   color: rgba(217, 152, 106, 0.5);
 }
+.list1, .list2, .list3{
+  list-style: disc;
+}
 .list__item{
   font-family: 'Comfortaa';
   font-weight: normal;
@@ -330,4 +333,58 @@
   height: 20px;
   background-color: #ECCCB5;
   border-radius: 50%;
+}
+
+/* Calculation */
+
+.calculation{
+  padding-top: 191px;
+}
+.calculation__title{
+  margin-bottom: 46px;
+}
+.form__inputs{
+  display: flex;
+}
+.form__paragraph{
+  display: flex;
+  flex-direction: column;
+  font-family: 'Comfortaa';
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 14px;
+  color: #3C3C3C;
+  margin-top: 35px;
+}
+.form__paragraph_left{
+  margin-right: 40px;
+}
+.form__input{
+  width: 312px;
+  height: 45px;
+  border: 1px solid #3C3C3C;
+  background-color: transparent;
+  margin-top: 5px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: 'Comfortaa';
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  color: #4B667C;
+}
+.form__button{
+  background-color: #4B667C;
+  border: 1px solid #4B667C;
+  width: 311px;
+  height: 64px;
+  font-family: 'FuturaLightC';
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 29px;
+  color: #FFFFFF;
+}
+option{
+  margin-top: 22px;
 }
