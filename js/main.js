@@ -41,3 +41,24 @@ var mySwiper2 = new Swiper('.swiper-container-s2', {
 $(function(){
   $("#phone").mask("+7 (999) 999-99-99");
 });
+
+const headerButton = document.querySelector('#header__button');
+const modalWindow = document.querySelector('.modal-window-disabled');
+const modalOverlay = document.querySelector('.modal-overlay-disabled');
+const modalClose = document.querySelector('.modal__close');
+
+headerButton.addEventListener('click', function () {
+  modalWindow.classList.add('modal-window-active');
+  modalWindow.classList.remove('modal-window-disabled');
+  modalOverlay.classList.add('modal-overlay-active');
+  modalOverlay.classList.remove('modal-overlay-disabled');
+  console.log("modalWindow", modalWindow);
+});
+
+modalClose.addEventListener('click', function () {
+  modalWindow.classList.remove('modal-window-active');
+  modalWindow.classList.add('modal-window-disabled');
+  modalOverlay.classList.remove('modal-overlay-active');
+  modalOverlay.classList.add('modal-overlay-disabled');
+  console.log("modalWindow", modalWindow);
+});

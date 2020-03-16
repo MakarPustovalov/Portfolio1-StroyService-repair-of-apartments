@@ -10,6 +10,23 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+  <div class="modal-window-disabled">
+    <div class="modal__container">
+      <button class="modal__close"></button>
+      <h3 class="modal__title">Заполните форму и в скором времени мы вам перезвоним</h3>
+      <form action="" class="modal__form">
+        <p class="modal-line">Имя<input type="text" name="userName" placeholder="Дмитрий" class="form__input"></p>
+        <p class="modal-line">Телефон<input type="text" id="phone" name="userPhone" class="form__input" placeholder="+7 (___) ___-__-__"></p>
+        <p class="modal-line">E-mail<input type="email" name="userMail" class="form__input"></p>
+        <input type="submit" class="modal__submit" value="Узнать стоимость">
+      </form>
+    </div>
+  </div>
+  <div class="modal-overlay-disabled">
+
+  </div>
+  
   <!-- Header -->
   <a name="top"></a>
   <header class="header">
@@ -20,7 +37,7 @@
             <img src="img/Header/header1.png" alt="" class="header__bg1">
             <section class="header__section">
               <div class="header__heading">
-                <img src="img/Header/header-logo.svg" alt="" class="logo">
+                <img src="img/Header/header-logo.svg" alt="" class="header__logo">
                 <div class="header__phone">
                   Телефон: 8(846) 266-63-51
                 </div>
@@ -29,7 +46,7 @@
                 под ключ в Самаре</h1>
               <h2 class="header__subtitle">Профессиональный ремонт<br>
                 с гарантией 2 года</h2>
-              <button class="button">Узнать стоимость</button>
+              <button class="button" id="header__button">Узнать стоимость</button>
             </section>
           </div>
           <nav class="header__menu">
@@ -308,7 +325,6 @@
       </div>
     </div>
   </footer>
-
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/jquery.maskedinput.min.js"></script>
   <script src="js/swiper.min.js"></script>
