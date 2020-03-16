@@ -33,7 +33,11 @@ var mySwiper2 = new Swiper('.swiper-container-s2', {
   effect: 'fade',
   speed: 2000,
   autoplay: {
-    delay: 7500,
+    delay: 5500,
   },
   loop: true,
+});
+
+$(function(){
+  $("#phone").mask("+7 (999) 999-99-99");
 });
