@@ -1,5 +1,5 @@
 
-var mySwiper = new Swiper('.swiper-container', {
+var mySwiper1 = new Swiper('.swiper-container-s1', {
   speed: 400,
   spaceBetween: 100,
   loop: true,
@@ -28,3 +28,12 @@ window.onscroll = () => {
     links.classList.remove('header__links_fixed');
   }
 };
+
+var mySwiper2 = new Swiper('.swiper-container-s2', {
+  effect: 'fade',
+  speed: 2000,
+  autoplay: {
+    delay: 7500,
+  },
+  loop: true,
+});

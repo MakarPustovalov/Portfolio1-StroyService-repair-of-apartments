@@ -98,7 +98,7 @@
       <h2 class="offers__title title">Выберите подходящий пакет услуг</h2>
 
       <!-- Slider main container -->
-      <div class="swiper-container">
+      <div class="swiper-container swiper-container-s1">
           <div class="swiper-wrapper">
               <!-- Slides -->
               <div class="swiper-slide">
@@ -174,49 +174,60 @@
   </section>
   <section class="calculation">
     <div class="container">
-      <section class="calculation__form">
-        <h2 class="title calculation__title">Заполните форму для получения<br>
-          рассчёта стоимости ремонта</h2>
-        <form action="" class="form">
-          <div class="form__inputs">
-            <p class="form__paragraph form__paragraph_left">Вид ремонта
-              <select name="typeOfRenovation" id="" class="form__input">
-                <option value="Budget">Бюджетный</option>
-                <option value="Capital">Капитальный</option>
-                <option value="Euro">Евроремонт</option>
-              </select>
-            </p>
-            <p class="form__paragraph">Имя<input type="text" class="form__input" placeholder="Дмитрий"></p>
-          </div>
-          <div class="form__inputs">
-            <p class="form__paragraph form__paragraph_left">Площадь, м2<input type="text" class="form__input"></p>
-            <p class="form__paragraph">Телефон<input type="text" class="form__input" placeholder="+7 (___) ___-__-__"></p>
-          </div>
-          <div class="form__inputs">
-            <p class="form__paragraph form__paragraph_left">Тип объекта
-              <select name="typeOfBuilding" id="" class="form__input">
-                <option value="New">Новостройка</option>
-                <option value="Secondary">Вторичка</option>
-                <option value="Private">Частный дом</option>
-              </select>
-            </p>
-            <p class="form__paragraph">E-mail<input type="email" class="form__input"></p>
-          </div>
-          <div class="form__inputs">
-            <p class="form__paragraph form__paragraph_left">Количество комнат
-              <select name="amountOfRooms" id="" class="form__input">
-                <option value="One">1</option>
-                <option value="Two">2</option>
-                <option value="Three">3</option>
-                <option value="More">Более 3-х</option>
-              </select></p>
-            <p class="form__paragraph"><input type="submit" class="form__button" value="Узнать стоимость"></p>
-          </div>
-        </form>
-      </section>
-      <section class="gallery">
-
-      </section>
+      <div class="calculation__container">
+        <section class="calculation__form">
+          <h2 class="title calculation__title">Заполните форму для получения
+            рассчёта стоимости ремонта</h2>
+          <form action="mail.php" method="POST" class="form">
+            <div class="form__inputs">
+              <p class="form__paragraph form__paragraph_left">Вид ремонта
+                <select name="typeOfRenovation" id="" class="form__input">
+                  <option value="Budget">Бюджетный</option>
+                  <option value="Capital">Капитальный</option>
+                  <option value="Euro">Евроремонт</option>
+                </select>
+              </p>
+              <p class="form__paragraph">Имя<input type="text" class="form__input" placeholder="Дмитрий"></p>
+            </div>
+            <div class="form__inputs">
+              <p class="form__paragraph form__paragraph_left">Площадь, м2<input type="text" class="form__input"></p>
+              <p class="form__paragraph">Телефон<input type="text" class="form__input" placeholder="+7 (___) ___-__-__"></p>
+            </div>
+            <div class="form__inputs">
+              <p class="form__paragraph form__paragraph_left">Тип объекта
+                <select name="typeOfBuilding" id="" class="form__input">
+                  <option value="New">Новостройка</option>
+                  <option value="Secondary">Вторичка</option>
+                  <option value="Private">Частный дом</option>
+                </select>
+              </p>
+              <p class="form__paragraph">E-mail<input type="email" class="form__input"></p>
+            </div>
+            <div class="form__inputs">
+              <p class="form__paragraph form__paragraph_left">Количество комнат
+                <select name="amountOfRooms" id="" class="form__input">
+                  <option value="One">1</option>
+                  <option value="Two">2</option>
+                  <option value="Three">3</option>
+                  <option value="More">Более 3-х</option>
+                </select></p>
+              <p class="form__paragraph"><input type="submit" class="form__button" value="Узнать стоимость"></p>
+            </div>
+          </form>
+        </section>
+        <section class="gallery">
+          <div class="swiper-container swiper-container-s2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="img/Gallery/image1.png" alt="" class="gallery__image">
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/Gallery/image2.png" alt="" class="gallery__image">
+                </div>
+            </div>
+        </div>
+        </section>
+      </div>
     </div>
   </section>
 
