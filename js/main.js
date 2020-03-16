@@ -33,7 +33,7 @@ var mySwiper2 = new Swiper('.swiper-container-s2', {
   effect: 'fade',
   speed: 2000,
   autoplay: {
-    delay: 5500,
+    delay: 3000,
   },
   loop: true,
 });

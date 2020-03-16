@@ -481,13 +481,15 @@ option{
 /* Contacts */
 
 .contacts{
-  height: 451px;
+  height: 623px;
   width: 100%;
+  padding-bottom: 81px;
+  padding-top: 81px;
 }
 .contacts__container{
-  padding-top: 81px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .contacts__left-column{
   max-width: 754px;
@@ -518,5 +520,12 @@ option{
   color: #3C3C3C;
 }
 .contacts__line a:hover{
-  
+
 }
+.map-container{
+  max-width: 754px;
+  height: 451px;
+}
+
+/* Footer */
+
