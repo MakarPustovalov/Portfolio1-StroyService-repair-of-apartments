@@ -17,7 +17,6 @@
 }
 .container{
   max-width: 1336px;
-  /* width: 69.583333%; */
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -55,11 +54,6 @@
 }
 /* Header */
 
-.header__container{
-  max-width: 1920px;
-  width: 100%;
-  margin: 0 auto;
-}
 .header{
   width: 100%;
   height: 948px;
@@ -132,6 +126,8 @@
 .header__sidebar1{
   background-image: url(../img/Header/sidebar1.png);
   background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
   position: absolute;
   top: 0;
   right: 0;
@@ -142,6 +138,8 @@
 .header__sidebar2{
   background-image: url(../img/Header/sidebar2.png);
   background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
   position: absolute;
   top: 642px;
   right: 0;
@@ -152,13 +150,14 @@
 
 /* Header menu */
 
-.header__menu{
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+.menu{
   width: 100%;
   height: 76px;
   background-color: #D9986A;
+}
+.menu__wrapper{
+  height: 100%;
+  display: flex;
 }
 .header__menu_fixed{
   position: fixed;
@@ -166,24 +165,21 @@
   width: 100%;
   z-index: 9999;
 }
-.header__links{
+.menu__links{
   display: flex;
-  margin-right: auto;
-  margin-left: auto;
+  align-items: center;
+  margin: auto auto auto 5.13%;
+  width: 66.61562%;
+  align-self: center;
 }
-.header__links_fixed{
-  margin-right: auto;
-  margin-left: auto;
-}
-.header__item{
+.menu__item{
   display: inline-block;
   margin-left: 50px;
-  position: relative;
 }
-.header__item:first-child{
+.menu__item:first-child{
   margin-left: 0;
 }
-.header__item::before{
+.menu__item::before{
   visibility: hidden;
   content: "";
   position: absolute;
@@ -194,7 +190,7 @@
   top: -10px;
   left: -10px;
 }
-.header__item::after{
+.menu__item::after{
   visibility: hidden;
   content: "";
   position: absolute;
@@ -206,13 +202,13 @@
   bottom: -10px;
   right: -10px;
 }
-.header__item:hover::before{
+.menu__item:hover::before{
   visibility: visible;
 }
-.header__item:hover::after{
+.menu__item:hover::after{
   visibility: visible;
 }
-.header__link{
+.menu__link{
   font-family: 'Comfortaa';
   font-style: normal;
   font-weight: bold;
