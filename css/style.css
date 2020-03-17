@@ -49,6 +49,9 @@
 .mobile-nav{
   display: none;
 }
+.mobile-menu{
+  display: none;
+}
 /* Header */
 
 .header__container{
@@ -747,6 +750,7 @@ option{
 /* android */
 
 @media (max-width: 767px){
+  /* Menu */
   .mobile-nav{
     display: flex;
     position: fixed;
@@ -790,7 +794,6 @@ option{
     transition: 0.2s;
   }
   .mobile-menu{
-    display: none;
     width: 100%;
     height: 171px;
     z-index: 999999;
@@ -828,5 +831,11 @@ option{
     transform: rotate(-45deg);
     top: 0;
     transition: 0.2s;
+  }
+  .header__menu{
+    display: none;
+  }
+  .header__menu_fixed{
+    display: none;
   }
 }
