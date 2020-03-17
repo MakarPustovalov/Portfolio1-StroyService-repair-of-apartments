@@ -21,6 +21,7 @@
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+  height: 100%;
 }
 .title{
   font-family: 'Comfortaa';
@@ -61,40 +62,32 @@
 }
 .header{
   width: 100%;
-  height: 1024px;
-}
-.header__main-container{
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-}
-.header__content{
-  display: flex;
-  flex-direction: column;
-  width: 77.70833333333%;
-  height: 1024px;
-  max-width: 1492px;
-}
-.header__content-upper{
-  display: flex;
-  width: 100%;
   height: 948px;
 }
 .header__bg1{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../img/Header/header1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   max-width: 846px;
-  width: 56.70241%;
+  width: 44.0625%;
   object-fit: cover;
-  max-height: 948px;
+  height: 948px;
 }
 .header__section{
-  width: 520px;
   display: flex;
   flex-direction: column;
   margin-left: 65px;
   justify-content: flex-start;
   padding-top: 31px;
-  max-width: 517px;
+  width: 517px;
+  max-width: 39.81623277%;
   height: 948px;
+  max-height: 100%;
+  margin-right: 201px;
+  margin-left: auto;
 }
 .header__heading{
   width: 100%;
@@ -136,6 +129,29 @@
   color: #3C3C3C;
   margin-bottom: 63px;
 }
+.header__sidebar1{
+  background-image: url(../img/Header/sidebar1.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 22.3%;
+  max-width: 428px;
+  height: 642px;
+}
+.header__sidebar2{
+  background-image: url(../img/Header/sidebar2.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 642px;
+  right: 0;
+  width: 22.3%;
+  max-width: 428px;
+  height: 382px;
+}
+
+/* Header menu */
+
 .header__menu{
   display: flex;
   justify-content: flex-end;
@@ -152,7 +168,7 @@
 }
 .header__links{
   display: flex;
-  margin-right: 10.92459%;
+  margin-right: auto;
   margin-left: auto;
 }
 .header__links_fixed{
@@ -205,16 +221,7 @@
   color: #FFFFFF;
   text-decoration: none;
 }
-.header__sidebar{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  width: 22.29166666667%;
-}
-.header__sidebar-pic{
-  width: 100%;
-  object-fit: cover;
-}
+
 /* Features */
 
 .features{
