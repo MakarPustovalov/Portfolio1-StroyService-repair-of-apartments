@@ -46,6 +46,9 @@
   background-color: #D9986A;
   color: #FFFFFF;
 }
+.mobile-nav{
+  display: none;
+}
 /* Header */
 
 .header__container{
@@ -601,16 +604,14 @@ option{
   position: fixed;
   display: block;
   background-color: #ffffff;
-  height: 100%;
-  width: 100%;
   z-index: 1000020;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   max-width: 930px;
+  width: 48.4375%;
   max-height: 630px;
-  width: 90%;
-  height: 90%;
+  height: 61.5234375%;
 }
 .modal__container{
   padding-top: 78px;
@@ -630,8 +631,12 @@ option{
 .modal__close{
   background-image: url(../img/close.svg);
   background-repeat: no-repeat;
-  width: 43px;
-  height: 40px;
+  background-position: center center;
+  background-size: cover;
+  max-width: 43px;
+  width: 4.62365591397%;
+  max-height: 40px;
+  height: 6.3492%;
   background-color: transparent;
   border: none;
   position: absolute;
@@ -641,7 +646,7 @@ option{
 .modal__title{
   font-family: 'Comfortaa';
   font-weight: bold;
-  font-size: 40px;
+  font-size: 250%;
   line-height: 120%;
   text-align: center;
   color: #4B667C;
@@ -664,10 +669,7 @@ option{
   display: flex;
   flex-direction: column;
 }
-.modal__submit{
-  max-width: 312px;
-  width: 100%;
-  height: 64px;
+.modal-button{
   background-color: #4B667C;
   border: 1px solid #4B667C;
   font-family: 'FuturaLightC';
@@ -677,9 +679,154 @@ option{
   color: #FFFFFF;
   transition: 0.2s;
 }
+.modal-button:hover{
+  background: #2A465C;
+  border: 1px solid #2A465C;
+}
+.modal__submit{
+  max-width: 312px;
+  width: 100%;
+  height: 64px;
+}
+.modal-thanks__container{
+  width: 100%;
+  height: 100%;
+  padding-top: 108px;
+}
+.modal-thanks__button{
+  position: relative;
+  display: block;
+  border: none;
+  max-width: 26.7857%;
+  width: 225px;
+  max-height: 19.48%;
+  height: 60px;
+  margin-left: 36.6666666666%;
+  margin-right: 36.6666666666%;
+  margin-top: 46px;
+}
+.modal-thanks-active{
+  position: fixed;
+  max-width: 840px;
+  width: 43.75%;
+  max-height: 416px;
+  height: 40.625%;
+  z-index: 1000020;
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.modal-thanks__title{
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.5rem;
+  line-height: 120%;
+  text-align: center;
+  color: #4B667C;
+  max-width: 78.57142857%;
+  width: 660px;
+  height: 96px;
+  max-height: 31.168831%;
+  margin: 0 auto;
+
+}
+.modal-thanks-disabled{
+  display: none;
+}
 .modal-window-disabled{
   display: none;
 }
 .modal-overlay-disabled{
   display: none;
+}
+
+/* responsive */
+
+/* android */
+
+@media (max-width: 767px){
+  .mobile-nav{
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 30px;
+    padding: 3px 15px;
+    z-index: 99999;
+    background-color: #D9986A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .mobile-nav__logo{
+    display: block;
+    width: 27px;
+    height: 23px;
+  }
+  .mobile-nav__burger{
+    width: 20px;
+    height: 1px;
+    background-color: #fff;
+    position: relative;
+  }
+  .mobile-nav__burger::before{
+    content: '';
+    width: 20px;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    top: -5px;
+    transition: 0.2s;
+  }
+  .mobile-nav__burger::after{
+    content: '';
+    width: 20px;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -5px;
+    transition: 0.2s;
+  }
+  .mobile-menu{
+    display: none;
+    width: 100%;
+    height: 171px;
+    z-index: 999999;
+    position: fixed;
+    top: 30px;
+    background-color: #D9986A;
+    flex-direction: column;
+    padding: 15px 120px;
+  }
+  .mobile-menu__item{
+    text-align: center;
+    margin-bottom: 13px;
+  }
+  .mobile-menu__link{
+    text-decoration: none;
+    font-family: 'Comfortaa';
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 132%;
+    color: #FFFFFF;
+    text-align: center;
+  }
+  .mobile-menu-active{
+    display: flex;
+  }
+  .mobile-nav__burger-close{
+    height: 0;
+  }
+  .mobile-nav__burger-close::before{
+    transform: rotate(45deg);
+    top: 0;
+    transition: 0.2s;
+  }
+  .mobile-nav__burger-close::after{
+    transform: rotate(-45deg);
+    top: 0;
+    transition: 0.2s;
+  }
 }

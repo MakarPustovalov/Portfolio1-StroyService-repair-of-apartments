@@ -46,13 +46,15 @@ const headerButton = document.querySelector('#header__button');
 const modalWindow = document.querySelector('.modal-window-disabled');
 const modalOverlay = document.querySelector('.modal-overlay-disabled');
 const modalClose = document.querySelector('.modal__close');
+const modalThanks = document.querySelector('.modal-thanks-disabled');
+const modalSubmit = document.querySelector('.modal__submit');
+const modalThanksClose = document.querySelector('.modal-thanks__button');
 
 headerButton.addEventListener('click', function () {
   modalWindow.classList.add('modal-window-active');
   modalWindow.classList.remove('modal-window-disabled');
   modalOverlay.classList.add('modal-overlay-active');
   modalOverlay.classList.remove('modal-overlay-disabled');
-  console.log("modalWindow", modalWindow);
 });
 
 modalClose.addEventListener('click', function () {
@@ -60,5 +62,41 @@ modalClose.addEventListener('click', function () {
   modalWindow.classList.add('modal-window-disabled');
   modalOverlay.classList.remove('modal-overlay-active');
   modalOverlay.classList.add('modal-overlay-disabled');
-  console.log("modalWindow", modalWindow);
 });
+
+modalSubmit.addEventListener('click', function () {
+  modalWindow.classList.remove('modal-window-active');
+  modalWindow.classList.add('modal-window-disabled');
+  modalThanks.classList.remove('modal-thanks-disabled');
+  modalThanks.classList.add('modal-thanks-active');
+});
+
+modalThanksClose.addEventListener('click', function () {
+  modalThanks.classList.remove('modal-thanks-active');
+  modalThanks.classList.add('modal-thanks-disabled');
+  modalOverlay.classList.remove('modal-overlay-active');
+  modalOverlay.classList.add('modal-overlay-disabled');
+});
+
+$('#modalForm').submit(function(e){
+  e.preventDefault();
+  $.ajax({
+    url: "mail.php",
+    type: "POST",
+    data: $('#modalForm').serialize(),
+    success: function(response) {
+      //обработка успешной отправки
+    },
+    error: function(response) {
+      //обработка ошибок при отправке
+   }
+  });
+});
+
+const burger = document.querySelector('.mobile-nav__burger');
+const navMenu = document.querySelector('.mobile-menu');
+
+burger.addEventListener('click', function () {
+  navMenu.classList.toggle('mobile-menu-active');
+  burger.classList.toggle('mobile-nav__burger-close');
+})

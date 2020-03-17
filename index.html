@@ -15,21 +15,37 @@
     <div class="modal__container">
       <button class="modal__close"></button>
       <h3 class="modal__title">Заполните форму и в скором времени мы вам перезвоним</h3>
-      <form action="" class="modal__form">
+      <form action="" class="modal__form" name="modalForm" id="modalForm">
         <p class="modal-line">Имя<input type="text" name="userName" placeholder="Дмитрий" class="form__input"></p>
         <p class="modal-line">Телефон<input type="text" id="phone" name="userPhone" class="form__input" placeholder="+7 (___) ___-__-__"></p>
         <p class="modal-line">E-mail<input type="email" name="userMail" class="form__input"></p>
-        <input type="submit" class="modal__submit" value="Узнать стоимость">
+        <input type="submit" class="modal__submit modal-button" value="Узнать стоимость">
       </form>
     </div>
   </div>
-  <div class="modal-overlay-disabled">
-
+  <div class="modal-thanks-disabled">
+    <div class="modal-thanks__container">
+      <h3 class="modal-thanks__title">Спасибо, ожидайте звонка в течение 15 минут</h3>
+      <button class="modal-thanks__button modal-button">Спасибо</button>
+    </div>
   </div>
+  <div class="modal-overlay-disabled"></div>
   
   <!-- Header -->
   <a name="top"></a>
   <header class="header">
+    
+    <nav class="mobile-nav">
+      <img src="img/responsive/mobile/logo.svg" alt="" class="mobile-nav__logo">
+      <div class="mobile-nav__burger"></div>
+    </nav>
+    <div class="mobile-menu">
+      <div class="mobile-menu__item"><a href="#features" class="mobile-menu__link">Преимущества</a></div>
+      <div class="mobile-menu__item"><a href="#offers" class="mobile-menu__link">Услуги</a></div>
+      <div class="mobile-menu__item"><a href="#form" class="mobile-menu__link">Калькулятор</a></div>
+      <div class="mobile-menu__item"><a href="#faq" class="mobile-menu__link">Ответы</a></div>
+      <div class="mobile-menu__item"><a href="#contacts" class="mobile-menu__link">Контакты</a></div>
+    </div>
     <div class="header__container">
       <section class="header__main-container">
         <div class="header__content">
