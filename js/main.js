@@ -18,11 +18,11 @@ const offset = menu.offsetTop;
 
 window.onscroll = () => {
   if (window.pageYOffset >= offset) {
-    menu.classList.add('header__menu_fixed');
-    links.classList.add('header__links_fixed');
+    menu.classList.add('menu_fixed');
+    links.classList.add('menu__links_fixed');
   } else {
-    menu.classList.remove('header__menu_fixed');
-    links.classList.remove('header__links_fixed');
+    menu.classList.remove('menu_fixed');
+    links.classList.remove('menu__links_fixed');
   }
 };
 
