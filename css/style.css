@@ -701,6 +701,13 @@ option{
 .modal-line{
   display: flex;
   flex-direction: column;
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 14px;
+  
+  color: #3C3C3C;
 }
 .modal-button{
   background-color: #4B667C;
@@ -1272,5 +1279,69 @@ option{
   }
   .footer__link:last-child{
     margin-bottom: 0;
+  }
+
+  /* Modal */
+
+  .modal-window-active{
+    width: 330px;
+    height: 446px;
+  }
+  .modal__container{
+    padding-top: 26px;
+  }
+  .modal__title{
+    font-size: 18px;
+    line-height: 120%;
+    margin-bottom: 12px;
+  }
+  .modal__close{
+    width: 16px;
+    height: 16px;
+    top: 11px;
+    right: 11px;
+  }
+  .modal-line{
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 14px;
+  }
+  .modal__input{
+    border: 1px solid #3C3C3C;
+    width: 100%;
+    height: 40px;
+  }
+  .modal__form{
+    width: 223px;
+    height: 304px;
+  }
+  .modal-button{
+    width: 100%;
+    max-width: 223px;
+    height: 59px;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 29px;
+    max-height: 59px;
+  }
+  .modal-thanks-active{
+    width: 330px;
+    height: 260px;
+  }
+  .modal-thanks__container{
+    padding-top: 52px;
+  }
+  .modal-thanks__title{
+    font-size: 18px;
+    line-height: 120%;
+    margin-bottom: 39px;
+  }
+  .modal-thanks__button{
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 29px;
+    margin-top: 0;
   }
 }
