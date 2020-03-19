@@ -1124,6 +1124,8 @@ option{
     height: 928px;
     padding-top: 38px;
     background-image: url(../img/responsive/mobile/faq/bg.png);
+    background-position: top center;
+    background-size: cover;
   }
   .faq__content{
     padding-top: 0;
@@ -1140,6 +1142,9 @@ option{
   }
   .faq-row{
     flex-direction: column;
+    width: 100%;
+    max-width: 330px;
+    height: auto;
   }
   .question{
     width: 100%;
