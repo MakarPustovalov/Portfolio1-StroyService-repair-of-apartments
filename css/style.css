@@ -816,16 +816,21 @@ option{
     width: 27px;
     height: 23px;
   }
+  .mobile-nav__burger-area{
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
   .mobile-nav__burger{
     width: 20px;
-    height: 1px;
+    height: 2px;
     background-color: #fff;
     position: relative;
   }
   .mobile-nav__burger::before{
     content: '';
     width: 20px;
-    height: 1px;
+    height: 2px;
     background-color: #fff;
     position: absolute;
     top: -5px;
@@ -834,7 +839,7 @@ option{
   .mobile-nav__burger::after{
     content: '';
     width: 20px;
-    height: 1px;
+    height: 2px;
     background-color: #fff;
     position: absolute;
     bottom: -5px;

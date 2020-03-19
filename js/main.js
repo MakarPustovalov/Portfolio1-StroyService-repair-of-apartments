@@ -90,11 +90,12 @@ $('#modalForm').submit(function(e){
   });
 });
 
+const burgerArea = document.querySelector('.mobile-nav__burger-area');
 const burger = document.querySelector('.mobile-nav__burger');
 const navMenu = document.querySelector('.mobile-menu');
 const mobileMenuLink = document.querySelector('.mobile-menu');
 
-burger.addEventListener('click', function () {
+burgerArea.addEventListener('click', function () {
   navMenu.classList.toggle('mobile-menu-active');
   burger.classList.toggle('mobile-nav__burger-close');
 });
@@ -104,5 +105,4 @@ mobileMenuLink.addEventListener('click', function () {
   navMenu.classList.remove('mobile-menu-active');
   burger.classList.add('mobile-nav__burger');
   burger.classList.remove('mobile-nav__burger-close');
-  console.log(burger, navMenu);
 });
