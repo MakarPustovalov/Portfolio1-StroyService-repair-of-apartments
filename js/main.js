@@ -4,9 +4,6 @@ var mySwiper1 = new Swiper('.swiper-container-s1', {
   spaceBetween: 100,
   loop: true,
   slidesPerView: 1,
-  navigation: {
-    nextEl: '.arrow',
-  },
   pagination: {
     el: '.slider-pagination',
     bulletClass: 'slider-bullet',
@@ -14,8 +11,8 @@ var mySwiper1 = new Swiper('.swiper-container-s1', {
   },
 });
 
-const menu = document.querySelector('.header__menu');
-const links = document.querySelector('.header__links');
+const menu = document.querySelector('.menu');
+const links = document.querySelector('.menu__links');
 
 const offset = menu.offsetTop;
 
@@ -95,8 +92,17 @@ $('#modalForm').submit(function(e){
 
 const burger = document.querySelector('.mobile-nav__burger');
 const navMenu = document.querySelector('.mobile-menu');
+const mobileMenuLink = document.querySelector('.mobile-menu');
 
 burger.addEventListener('click', function () {
   navMenu.classList.toggle('mobile-menu-active');
   burger.classList.toggle('mobile-nav__burger-close');
-})
+});
+
+mobileMenuLink.addEventListener('click', function () {
+  navMenu.classList.add('mobile-menu');
+  navMenu.classList.remove('mobile-menu-active');
+  burger.classList.add('mobile-nav__burger');
+  burger.classList.remove('mobile-nav__burger-close');
+  console.log(burger, navMenu);
+});

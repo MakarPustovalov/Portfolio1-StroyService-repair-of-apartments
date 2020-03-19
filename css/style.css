@@ -175,6 +175,7 @@
 .menu__item{
   display: inline-block;
   margin-left: 50px;
+  position: relative;
 }
 .menu__item:first-child{
   margin-left: 0;
@@ -753,7 +754,14 @@ option{
 /* android */
 
 @media (max-width: 767px){
+  .container{
+    max-width: 330px;
+    margin: 0 auto;
+    height: 100%;
+  }
+
   /* Menu */
+
   .mobile-nav{
     display: flex;
     position: fixed;
@@ -841,4 +849,8 @@ option{
   .header__menu_fixed{
     display: none;
   }
+
+  /* Header */
+
+  
 }
