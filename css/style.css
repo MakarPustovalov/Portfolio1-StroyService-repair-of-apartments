@@ -584,14 +584,27 @@ option{
   height: 132px;
 }
 .footer__container{
-  width: 100%;
+  max-width: 1087px;
+  width: 83.23124%;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-left: 110px;
-  padding-right: 110px;
 }
-.footer a{
+.footer__logo{
+  background-image: url(../img/Header/header-logo.svg);
+  background-repeat: no-repeat;
+  width: 110px;
+  height: 95px;
+}
+.footer__links{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 866px;
+}
+.footer__link{
   font-family: 'Comfortaa';
   font-weight: normal;
   font-size: 13px;
@@ -1222,5 +1235,37 @@ option{
 
   /* Footer */
 
-  
+  .footer{
+    height: 88px;
+    width: 100%;
+  }
+  .footer__wrapper{
+    height: 100%;
+  }
+  .footer__logo{
+    width: 58px;
+    height: 50px;
+    background-image: url(../img/responsive/mobile/Footer/logo.svg);
+  }
+  .footer__container{
+    position: relative;
+    width: 100%;
+    max-width: 330px;
+    padding: 0;
+    flex-direction: row-reverse;
+    height: 100%;
+  }
+  .footer__links{
+    flex-direction: column;
+  }
+  .footer__link{
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 162.69%;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  .footer__link:last-child{
+    margin-bottom: 0;
+  }
 }
