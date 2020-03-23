@@ -185,6 +185,9 @@
   width: 66.61562%;
   align-self: center;
 }
+.menu__links_fixed{
+  margin: 0 auto;
+}
 .menu__item{
   display: inline-block;
   margin-left: 50px;
@@ -1334,7 +1337,7 @@ option{
   .modal-thanks__title{
     font-size: 18px;
     line-height: 120%;
-    margin-bottom: 39px;
+    margin-bottom: 39p;
   }
   .modal-thanks__button{
     margin-left: auto;
