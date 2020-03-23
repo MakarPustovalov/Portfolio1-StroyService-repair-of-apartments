@@ -2,8 +2,8 @@
  
 Вёрстка:
 
-VK: vk.com/makarrrich
+VK: https://vk.com/makarrrich
 
 Дизайн - Екатерина Короткова
 
-VK: vk.com/monopolya
+VK: https://vk.com/monopolya
